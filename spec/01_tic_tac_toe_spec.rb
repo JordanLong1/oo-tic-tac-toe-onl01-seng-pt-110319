@@ -75,7 +75,6 @@ describe './lib/tic_tac_toe.rb' do
         game = TicTacToe.new
         game.move(0, "X")
         game.move(4, "O")
-
         board = game.instance_variable_get(:@board)
 
         expect(board).to eq(["X", " ", " ", " ", "O", " ", " ", " ", " "])
